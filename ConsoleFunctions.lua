@@ -1,3 +1,4 @@
+--CREDITS TO OVERKILL FOR UI LIB
 local lib = {}
 local RunService = game:GetService("RunService")
 
@@ -65,7 +66,7 @@ function lib:setColor(color)
 end
 
 function lib:addInput(trigger,callback)
-        while wait() do
+        while wait() do --patches weird ass syn crash
         local input = rconsoleinput(input)
         if trigger == input then
             callback()
